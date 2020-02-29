@@ -6,9 +6,31 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+#merchants
+creature_shop = Merchant.create!(name: 'Megans Creatures', address: '123 Main St', city: 'Denver', state: 'CO', zip: 80218)
+zoo_shop = Merchant.create!(name: 'Brians Animals', address: '125 Main St', city: 'Denver', state: 'CO', zip: 80218)
 
-megan = Merchant.create!(name: 'Megans Marmalades', address: '123 Main St', city: 'Denver', state: 'CO', zip: 80218)
-brian = Merchant.create!(name: 'Brians Bagels', address: '125 Main St', city: 'Denver', state: 'CO', zip: 80218)
+#creature_shop items
 megan.items.create!(name: 'Ogre', description: "I'm an Ogre!", price: 20, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 5 )
 megan.items.create!(name: 'Giant', description: "I'm a Giant!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
+megan.items.create!(name: 'Elf', description: "I'm a Elf!", price: 40, image: 'https://previews.123rf.com/images/jihane123/jihane1231502/jihane123150200038/37084391-christmas-elf.jpg', active: true, inventory: 3 )
+
+#zoo_shop items
 brian.items.create!(name: 'Hippo', description: "I'm a Hippo!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
+brian.items.create!(name: 'Zebra', description: "I'm a Zebra!", price: 40, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyQFyGTrh7RSVBUJAyhJl8jtU6QE19cAf3sxzuiF3ig3tSyqxZ', active: true, inventory: 3 )
+brian.items.create!(name: 'Lion', description: "I'm a Lion!", price: 60, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnWmobflAog4dIU5vPkBeGMK4L3E89KYZgg_f6DHO0sDMHl4Fq', active: true, inventory: 3 )
+
+
+#users
+user1 = User.create(name: 'Denny', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220', role: 0, email: 'user@email.com', password: 'password', password_confirmation: 'password')
+user2 = User.create(name: 'Paul', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220',role: 0, email: 'user2@email.com', password: 'password', password_confirmation: 'password')
+user3 = User.create(name: 'Kate', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220', role: 0, email: 'user3@email.com', password: 'password', password_confirmation: 'password')
+
+#merchant
+merchant_1 = User.create(name: 'Amy', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220', role: 1, email: 'merchant@email.com', password: 'password', password_confirmation: 'password')
+creature_shop.users << merchant_1
+merchant_2 = User.create(name: 'Benny', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220', role: 1, email: 'merchant@email.com', password: 'password', password_confirmation: 'password')
+zoo_shop.users << merchant_2
+
+#admin
+admin = User.create(name: 'Jenny', address: '1234 Main St.', city: 'Denver', state: 'CO', zip: '80220', role: 2, email: 'admin@email.com', password: 'password', password_confirmation: 'password')

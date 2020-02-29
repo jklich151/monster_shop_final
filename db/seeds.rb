@@ -1,3 +1,8 @@
+User.destroy_all
+Item.destroy_all
+Merchant.destroy_all
+
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -11,14 +16,14 @@ creature_shop = Merchant.create!(name: 'Megans Creatures', address: '123 Main St
 zoo_shop = Merchant.create!(name: 'Brians Animals', address: '125 Main St', city: 'Denver', state: 'CO', zip: 80218)
 
 #creature_shop items
-megan.items.create!(name: 'Ogre', description: "I'm an Ogre!", price: 20, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 5 )
-megan.items.create!(name: 'Giant', description: "I'm a Giant!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
-megan.items.create!(name: 'Elf', description: "I'm a Elf!", price: 40, image: 'https://previews.123rf.com/images/jihane123/jihane1231502/jihane123150200038/37084391-christmas-elf.jpg', active: true, inventory: 3 )
+creature_shop.items.create!(name: 'Ogre', description: "I'm an Ogre!", price: 20, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 5 )
+creature_shop.items.create!(name: 'Giant', description: "I'm a Giant!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
+creature_shop.items.create!(name: 'Elf', description: "I'm a Elf!", price: 40, image: 'https://previews.123rf.com/images/jihane123/jihane1231502/jihane123150200038/37084391-christmas-elf.jpg', active: true, inventory: 3 )
 
 #zoo_shop items
-brian.items.create!(name: 'Hippo', description: "I'm a Hippo!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
-brian.items.create!(name: 'Zebra', description: "I'm a Zebra!", price: 40, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyQFyGTrh7RSVBUJAyhJl8jtU6QE19cAf3sxzuiF3ig3tSyqxZ', active: true, inventory: 3 )
-brian.items.create!(name: 'Lion', description: "I'm a Lion!", price: 60, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnWmobflAog4dIU5vPkBeGMK4L3E89KYZgg_f6DHO0sDMHl4Fq', active: true, inventory: 3 )
+zoo_shop.items.create!(name: 'Hippo', description: "I'm a Hippo!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
+zoo_shop.items.create!(name: 'Zebra', description: "I'm a Zebra!", price: 40, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyQFyGTrh7RSVBUJAyhJl8jtU6QE19cAf3sxzuiF3ig3tSyqxZ', active: true, inventory: 3 )
+zoo_shop.items.create!(name: 'Lion', description: "I'm a Lion!", price: 60, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnWmobflAog4dIU5vPkBeGMK4L3E89KYZgg_f6DHO0sDMHl4Fq', active: true, inventory: 3 )
 
 
 #users

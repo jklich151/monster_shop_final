@@ -3124,6 +3124,41 @@
           null
         ]
       },
+      "/Users/jennyklich/turing/2mod/projects/monster_shop_final/spec/models/discount_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/jennyklich/turing/2mod/projects/monster_shop_final/app/models/discount.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/jennyklich/turing/2mod/projects/monster_shop_final/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/jennyklich/turing/2mod/projects/monster_shop_final/spec/models/item_spec.rb": {
         "lines": [
           1,
@@ -3241,19 +3276,13 @@
           null
         ]
       },
-      "/Users/jennyklich/turing/2mod/projects/monster_shop_final/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/jennyklich/turing/2mod/projects/monster_shop_final/spec/models/merchant_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
+          2,
           2,
           2,
           2,
@@ -3314,6 +3343,7 @@
       },
       "/Users/jennyklich/turing/2mod/projects/monster_shop_final/app/models/merchant.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -4136,6 +4166,6 @@
         ]
       }
     },
-    "timestamp": 1583008622
+    "timestamp": 1583013517
   }
 }

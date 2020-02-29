@@ -17,11 +17,11 @@ zoo_shop = Merchant.create!(name: 'Brians Animals', address: '125 Main St', city
 
 #creature_shop items
 creature_shop.items.create!(name: 'Ogre', description: "I'm an Ogre!", price: 20, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 5 )
-creature_shop.items.create!(name: 'Giant', description: "I'm a Giant!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
-creature_shop.items.create!(name: 'Elf', description: "I'm a Elf!", price: 40, image: 'https://previews.123rf.com/images/jihane123/jihane1231502/jihane123150200038/37084391-christmas-elf.jpg', active: true, inventory: 3 )
+creature_shop.items.create!(name: 'Giant', description: "I'm a Giant!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTVWz5K80lL8stwijdEXT7OBcAUKnh5_TSIx2kxYW0alF2O5Zw6', active: true, inventory: 3 )
+creature_shop.items.create!(name: 'Elf', description: "I'm a Elf!", price: 40, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLT05x0-z7F4JKHQKSUcvF-BaJ85ZMOgdFlD_T_MYlvGrDGWfp', active: true, inventory: 3 )
 
 #zoo_shop items
-zoo_shop.items.create!(name: 'Hippo', description: "I'm a Hippo!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaLM_vbg2Rh-mZ-B4t-RSU9AmSfEEq_SN9xPP_qrA2I6Ftq_D9Qw', active: true, inventory: 3 )
+zoo_shop.items.create!(name: 'Hippo', description: "I'm a Hippo!", price: 50, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSO1rcFQq_7THYVeQF8MszkXFcEGS8NtNfknH26eHNPBTSI2qNq', active: true, inventory: 3 )
 zoo_shop.items.create!(name: 'Zebra', description: "I'm a Zebra!", price: 40, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyQFyGTrh7RSVBUJAyhJl8jtU6QE19cAf3sxzuiF3ig3tSyqxZ', active: true, inventory: 3 )
 zoo_shop.items.create!(name: 'Lion', description: "I'm a Lion!", price: 60, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQnWmobflAog4dIU5vPkBeGMK4L3E89KYZgg_f6DHO0sDMHl4Fq', active: true, inventory: 3 )
 

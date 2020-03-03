@@ -6,6 +6,7 @@
 Percentage: <%= discount.percentage_off %>
 Minimum Quantity: <%= discount.minimum_quantity %>
 <%= link_to "Edit Discount", "/merchant/discounts/#{discount.id}/edit" %>
+<%= link_to "Delete Discount", "/merchant/discounts/#{discount.id}", method: :delete %>
 </section>
 <% end %>
 

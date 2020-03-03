@@ -1,6 +1,7 @@
 class Merchant::DiscountsController < Merchant::BaseController
   def index
-    @discounts = current_user.merchant.discounts
+    # @discounts = current_user.merchant.discounts
+    @discounts = Merchant.find(current_user.merchant.id).discounts
   end
 
   def new
@@ -29,6 +30,12 @@ class Merchant::DiscountsController < Merchant::BaseController
       generate_flash(discount)
       render :new
     end
+  end
+
+  def destroy
+    discount = Discount.find(params[:id])
+    discount.destroy
+    redirect_to "/merchant/discounts"
   end
 
 

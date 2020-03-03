@@ -19,9 +19,11 @@ class Cart
   end
 
   def items
-    @contents.map do |item_id, _|
-      Item.find(item_id)
+    item_hash = Hash.new(0)
+    @contents.map do |item_id, quantity|
+      item_hash[Item.find(item_id)] = quantity
     end
+    item_hash
   end
 
   def grand_total

@@ -36,7 +36,7 @@ RSpec.describe Cart do
     end
 
     it '.items' do
-      expect(@cart.items).to eq([@ogre, @giant])
+      expect(@cart.items).to eq({@ogre => 1, @giant => 2})
     end
 
     it '.grand_total' do

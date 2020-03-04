@@ -30,12 +30,15 @@ RSpec.describe "Order Discounts" do
       visit "/items/#{@item_1.id}"
       click_on "Add to Cart"
       visit "/cart"
+
       expect(page).to have_content("Quantity: 9")
       expect(page).to have_content("Subtotal: $90.00")
+      expect(page).to_not have_content("Item Quantitiy Discount Applied!")
 
       visit "/items/#{@item_1.id}"
       click_on "Add to Cart"
       visit "/cart"
+
       expect(page).to have_content("Quantity: 10")
       expect(page).to have_content("Subtotal: $90.00")
       expect(@item_1.item_qualifies_for_discount(10)).to eq([@discount_1])
@@ -55,7 +58,13 @@ RSpec.describe "Order Discounts" do
       visit "/items/#{@item_1.id}"
       click_on "Add to Cart"
       visit "/cart"
-      19.times {click_on "More of This!"}
+
+      18.times {click_on "More of This!"}
+
+      expect(page).to have_content("Quantity: 19")
+      expect(page).to have_content("Subtotal: $171.00")
+
+      1.times {click_on "More of This!"}
 
       expect(page).to have_content("Quantity: 20")
       expect(page).to have_content("Subtotal: $160.00")

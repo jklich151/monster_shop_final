@@ -1,11 +1,16 @@
 # Monster Shop Extensions - Bulk Discount
 
+Background and Description
+"Monster Shop" is a fictitious e-commerce platform where users can register to place items into a shopping cart and 'check out'. Users who work for a merchant can mark their items as 'fulfilled'; the last merchant to mark items in an order as 'fulfilled' will automatically set the order status to "shipped". Each user role will have access to some or all CRUD functionality for application models. A bulk discount has been added to the cart. 
 
-## Instructions
+# Implementation Instructions
+To set up locally:
 
-* Fork this repository or use your existing project.
-* Clone your fork if you have forked.
-* When you are finished, push your code to your fork. (if you have forked)
+* Clone down the repository.
+* Run bundle install.
+* Run rails db:{create,migrate,seed} to setup the database.
+* Run rails s and navigate your browser to localhost:3000 to use the development database.
+
 
 ## Bulk Discount
 
